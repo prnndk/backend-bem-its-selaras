@@ -67,8 +67,7 @@ class PostResource extends Resource
                             ->nestedRecursiveRules([
                                 'min:3',
                                 'max:255',
-                            ])
-                            ->reorderable()
+                            ])->separator(',')->reorderable()
                             ->suggestions(PostTag::all()->pluck('name'))
                     ])->columns(2),
                     Section::make('Content')->schema([

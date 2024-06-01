@@ -45,7 +45,6 @@ class StaffDetailResource extends Resource
                             ->url()
                             ->activeUrl()
                             ->helperText('Please input the link fully, including the https://instagram.com/'),
-
                     ]),
                     Forms\Components\Section::make('Personal Image')->schema([
                         Forms\Components\FileUpload::make('image')

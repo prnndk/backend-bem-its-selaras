@@ -31,7 +31,7 @@ class StaffDetail extends Model
         return $this->belongsTo(User::class);
     }
 
-    public function dirjen(): BelongsTo
+    public function kedirjenan(): BelongsTo
     {
         return $this->belongsTo(Kedirjenan::class);
     }
